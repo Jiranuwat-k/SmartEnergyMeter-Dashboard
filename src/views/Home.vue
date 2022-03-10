@@ -1,5 +1,5 @@
 <template>
-  <div id="/">
+   <div id="/">
     <!-- <div ref="vanta"> -->
     <div class="container">
       <vue-typed-js :strings="['Smartenergymeter']" :loop="true">
@@ -7,26 +7,24 @@
         <h3>Welcome to</h3>
         <span class="typing h1"></span>
         <p>Electric power meter that connects you to the internet of things.</p>
-        <router-link class="btn btn-primary" to="/login">Get Started</router-link>
+        <router-link class="btn btn-primary" to="/dashboard">Get Started</router-link>
       </div>
        </vue-typed-js>
     </div>
     <!-- </div> -->
   </div>
+ 
 </template>
 
 <script>
-export default {
-  name: "Home",
-  components:{
+
+  export default {
+    name: 'Home',
+
+    components: {
       
-  },
-  data(){
-    return {
-     
-    }
-  },
-  mounted(){
+    },
+    mounted(){
     // document.title = "smartenergymeter"
     // window.VANTA.BIRDS({
     //   el: this.$refs.vanta,
@@ -41,10 +39,9 @@ export default {
     //       birdSize: 2.00
     // })
     
-  }
-};
+    }
+  };
 </script>
-
 <style scoped>
 body{
   height: 100%;
